@@ -1,13 +1,14 @@
 {
     "name": "ghost-theme-utils",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "JS and CSS utilities for Ghost themes",
     "main": "index.js",
     "scripts": {
         "dev": "gulp",
         "build": "gulp build",
         "clean": "gulp clean",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare" : "npm run build"
     },
     "repository": {
         "type": "git",
