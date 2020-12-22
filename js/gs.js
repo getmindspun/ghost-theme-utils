@@ -34,7 +34,7 @@
 
     Selection.prototype.val = function(value) {
         return this.each(function (element) {
-            element.val(value);
+            element.value = value;
         });
     }
 
