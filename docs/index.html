@@ -14,29 +14,43 @@
     <title>Test | Ghost Theme Utilities</title>
 </head>
 <body>
-<div class="container my-5 text-center">
-    <p>Click the 'Subscribe' button to open a full screen modal constaining a subscription form.</p>
-    <a class="btn btn-primary subscribe-button" href="/#subscribe">Subscribe</a>
-</div>
 
-<div class="container my-5 text-center">
-    <p>Simulate email confirmation of a new subscription.</p>
-    <a class="btn btn-success" href="/?action=subscribe&success=true">Confirm email</a>
-</div>
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Ghost theme subscribe form</h1>
+            <p class="lead text-muted">This page simulates the subscribe mechanism of Ghost.</p>
+        </div>
+    </div>
+</section>
 
-<div class="container my-5 text-center">
-    <p>Simulate email confirmation failure</p>
-    <a class="btn btn-danger" href="/?action=subscribe&success=false">Fail email</a>
-</div>
+<section class="container-fluid bg-light p-3">
 
-<div class="container my-5 text-center">
-    <p>Start over from scratch</p>
-    <a class="btn btn-secondary" href="/">Reset</a>
-</div>
+    <div class="container my-5 text-center">
+        <p>Click the 'Subscribe' button to open a full screen modal constaining a subscription form.</p>
+        <a class="btn btn-primary subscribe-button" href="/#subscribe">Subscribe</a>
+    </div>
+
+    <div class="container my-5 text-center">
+        <p>Simulate email confirmation of a new subscription.</p>
+        <a class="btn btn-success" href="/?action=subscribe&success=true">Confirm email</a>
+    </div>
+
+    <div class="container my-5 text-center">
+        <p>Simulate email confirmation failure</p>
+        <a class="btn btn-danger" href="/?action=subscribe&success=false">Fail email</a>
+    </div>
+
+    <div class="container my-5 text-center">
+        <p>Start over from scratch</p>
+        <a class="btn btn-secondary" href="/">Reset</a>
+    </div>
+</section>
 
 
 <!-- BEGIN html to be included in your theme -->
-<div class="position-fixed top-0 p-4 w-100 text-center text-white bg-success subscribe-notification subscribe-success-message" data-autohide="false">
+<div class="position-fixed top-0 p-4 w-100 text-center text-white bg-success subscribe-notification subscribe-success-message"
+     data-autohide="false">
     <a class="btn-close btn-close-white float-end subscribe-close-button" href="javascript:;"></a>
     You've successfully subscribed to GhostStead!
 </div>
@@ -64,7 +78,8 @@
                     <input class="form-control flex-grow-1 me-2 subscribe-email" data-members-email=""
                            placeholder="youremail@example.com"
                            autocomplete="false">
-                    <button class="btn btn-primary d-flex justify-content-center align-items-center" style="min-width: 100px" type="submit">
+                    <button class="btn btn-primary d-flex justify-content-center align-items-center"
+                            style="min-width: 100px" type="submit">
                         <span class="button-content">Subscribe</span>
                         <span class="button-loader spinner-border spinner-border-sm" role="status"></span>
                     </button>

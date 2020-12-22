@@ -2,7 +2,7 @@
 
 # ghost-theme-utils
 
-Easily add Ghost functionality to custom Ghost themes.
+Easily add Ghost functionality to custom themes.
 
 # Development
 ```

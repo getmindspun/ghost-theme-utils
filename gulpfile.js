@@ -9,10 +9,10 @@ const clean = require('gulp-clean');
 const open = require('open');
 
 function serve(done) {
-    const server = gls.static(['public', 'dist'], 8080);
+    const server = gls.static(['docs', 'dist'], 8080);
     server.start();
 
-    gulp.watch(['dist/', 'public/'])
+    gulp.watch(['dist/', 'docs/'])
         .on('change', function (path) {
             console.log(path);
             server.notify.call(server, { path });
