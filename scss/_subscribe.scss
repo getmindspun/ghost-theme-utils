@@ -1,0 +1,72 @@
+/**
+ * Full page overlay when user clicks 'Subscribe' CTA
+ */
+.subscribe-overlay {
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    pointer-events: none;
+}
+
+.subscribe-overlay:target {
+    z-index: 2001;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/**
+ * portal.min.js uses three classes on data-members-form to indicate state:
+ *   success, error and loading.
+ */
+.subscribe-form,
+form[data-members-form] {
+    &.invalid,
+    &.error {
+        .message-error {
+            display: block;
+
+        }
+    }
+
+    &.success {
+        .message-success {
+            display: block;
+        }
+    }
+
+    &.loading {
+        .button-content {
+            display: none;
+        }
+        .loader, .button-loader {
+            display: block;
+        }
+    }
+
+    .loader, .button-loader {
+        display: none;
+    }
+
+    .message-error,
+    .message-success {
+        display: none;
+    }
+}
+
+/**
+ * Email confirmation/failure messages
+ * These messages are shown by JS when the url contains success=false
+ */
+.subscribe-notification {
+    z-index: 3000;
+    visibility: hidden;
+}
+.subscribe-notification.close {
+    visibility: hidden !important;
+    transition: none;
+}
+
+.subscribe-success .subscribe-success-message,
+.subscribe-failure .subscribe-failure-message {
+    visibility: visible;
+}

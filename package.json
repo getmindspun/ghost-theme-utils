@@ -1,0 +1,41 @@
+{
+    "name": "ghost-theme-utils",
+    "version": "1.0.0",
+    "description": "JS and CSS utilities for Ghost themes",
+    "main": "index.js",
+    "scripts": {
+        "dev": "gulp",
+        "build": "gulp build",
+        "clean": "gulp clean",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ghoststead/ghost-theme-utils.git"
+    },
+    "keywords": [
+        "Ghost",
+        "CSS",
+        "SCSS",
+        "JS"
+    ],
+    "author": "GhostStead",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ghoststead/ghost-theme-utils/issues"
+    },
+    "homepage": "https://github.com/ghoststead/ghost-theme-utils#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "bootstrap": "^5.0.0-beta1",
+        "bootstrap-avatar": "^1.0.4",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-live-server": "0.0.31",
+        "gulp-livereload": "^4.0.2",
+        "gulp-sass": "^4.1.0",
+        "open": "^7.3.0",
+        "pump": "^3.0.0"
+    }
+}
