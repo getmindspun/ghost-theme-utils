@@ -4,13 +4,13 @@
 .subscribe-overlay {
     z-index: 2000;
     opacity: 0;
-    transition: opacity 0.2s ease-in;
     pointer-events: none;
 }
 
 .subscribe-overlay:target {
     z-index: 2001;
     opacity: 1;
+    transition: opacity 0.2s ease-in;
     pointer-events: auto;
 }
 
