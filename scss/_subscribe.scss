@@ -1,17 +1,14 @@
+@import "overlay";
+
 /**
  * Full page overlay when user clicks 'Subscribe' CTA
  */
 .subscribe-overlay {
-    z-index: 2000;
-    opacity: 0;
-    pointer-events: none;
+    @extend .overlay;
 }
 
 .subscribe-overlay:target {
-    z-index: 2001;
-    opacity: 1;
-    transition: opacity 0.2s ease-in;
-    pointer-events: auto;
+    @extend .overlay:target;
 }
 
 /**

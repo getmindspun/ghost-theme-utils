@@ -8,11 +8,13 @@ const concat = require('gulp-concat');
 const clean = require('gulp-clean');
 const open = require('open');
 
+const HTML = 'docs'
+
 function serve(done) {
-    const server = gls.static(['public', 'dist'], 8080);
+    const server = gls.static([HTML, 'dist'], 8080);
     server.start();
 
-    gulp.watch(['dist/', 'public/'])
+    gulp.watch(['dist', HTML])
         .on('change', function (path) {
             console.log(path);
             server.notify.call(server, { path });
