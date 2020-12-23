@@ -2,7 +2,11 @@
 
 # ghost-theme-utils
 
-Easily add Ghost functionality to custom themes.
+Easily add Ghost functionality to custom themes.\
+
+See the blog article
+[Everything you need to know about subscription forms in Ghost](https://www.ghoststead.com/blog/ghost-subscription-forms/)
+for a detailed explanation.
 
 ## Demo
 You can see this package in action in the following ways.
