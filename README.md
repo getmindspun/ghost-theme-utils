@@ -8,6 +8,14 @@ See the blog article
 [Everything you need to know about subscription forms in Ghost](https://www.ghoststead.com/blog/ghost-subscription-forms/)
 for a detailed explanation.
 
+## What's included
+* Base functional styles and javascript for subscribe forms.
+* Message overlays e.g. for 'Thank you' pages after contact form submission.
+* Generic Koenig styles - inclusion of _koenig.scss passes gscan.
+
+Styles include the source SCSS files in addition to generated CSS.
+
+
 ## Demo
 You can see this package in action in the following ways.
 
