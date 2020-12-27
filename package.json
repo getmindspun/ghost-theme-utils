@@ -29,7 +29,7 @@
     "dependencies": {},
     "devDependencies": {
         "bootstrap": "^5.0.0-beta1",
-        "bootstrap-avatar": "^1.0.4",
+        "bootstrap-avatar": "^1.1.1",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
         "gulp-concat": "^2.6.1",
