@@ -2,7 +2,6 @@
     "name": "ghost-theme-utils",
     "version": "1.3.0",
     "description": "JS and CSS utilities for Ghost themes",
-    "main": "index.js",
     "scripts": {
         "dev": "gulp",
         "build": "gulp build",
@@ -29,7 +28,7 @@
     "dependencies": {},
     "devDependencies": {
         "bootstrap": "^5.0.0-beta1",
-        "bootstrap-avatar": "^1.1.1",
+        "bootstrap-avatar": "^1.2.0",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
         "gulp-concat": "^2.6.1",
