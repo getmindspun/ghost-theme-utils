@@ -1,6 +1,6 @@
 {
     "name": "ghost-theme-utils",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "JS and CSS utilities for Ghost themes",
     "scripts": {
         "dev": "gulp",
