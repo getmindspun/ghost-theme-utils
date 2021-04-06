@@ -8,11 +8,11 @@
         "clean": "gulp clean",
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "npm run build",
-        "lint": "eslint js"
+        "lint": "eslint js docs/*.html"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ghoststead/ghost-theme-utils.git"
+        "url": "git+https://github.com/getmindspun/ghost-theme-utils.git"
     },
     "keywords": [
         "Ghost",
@@ -23,16 +23,18 @@
     "author": "GhostStead",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ghoststead/ghost-theme-utils/issues"
+        "url": "https://github.com/getmindspun/ghost-theme-utils/issues"
     },
-    "homepage": "https://github.com/ghoststead/ghost-theme-utils#readme",
+    "homepage": "https://github.com/getmindspun/ghost-theme-utils#readme",
     "dependencies": {},
     "devDependencies": {
-        "bootstrap": "^5.0.0-beta1",
-        "bootstrap-avatar": "^1.2.0",
+        "@popperjs/core": "^2.9.2",
+        "bootstrap": "^5.0.0-beta3",
+        "bootstrap-avatar": "^1.3.0",
         "connect": "^3.7.0",
         "connect-livereload": "^0.6.1",
         "eslint": "^7.18.0",
+        "eslint-plugin-html": "^6.1.2",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
         "gulp-concat": "^2.6.1",

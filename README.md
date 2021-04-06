@@ -1,12 +1,12 @@
 ![Version](https://img.shields.io/badge/version-1.4.0-blue)
-![GitHub](https://img.shields.io/github/license/ghoststead/ghost-theme-utils?label=License)
+![GitHub](https://img.shields.io/github/license/getmindspun/ghost-theme-utils?label=License)
 
 # ghost-theme-utils
 
-Easily add Ghost functionality to custom themes.\
+Easily add Ghost functionality to custom themes.
 
 See the blog article
-[Everything you need to know about subscription forms in Ghost](https://www.ghoststead.com/blog/ghost-subscription-forms/)
+[Everything you need to know about subscription forms in Ghost](https://www.mindspun.com/blog/ghost-subscription-forms/)
 for a detailed explanation.
 
 ## What's included
@@ -23,7 +23,7 @@ You can see this package in action in the following ways.
 
 ### Single page demo with simulated Ghost
 
-* https://ghoststead.github.io/ghost-theme-utils/
+* https://getmindspun.github.io/ghost-theme-utils/
 
 This is the easiest way to explore the functionality provided by this package.
 
@@ -47,7 +47,7 @@ This is the easiest way to explore the functionality provided by this package.
 ```
 
 The packaged version of the CSS also contains the CSS
-from [bootstrap-avatar](https://github.com/ghoststead/bootstrap-avatar). Usage of the above CDN does NOT require either
+from [bootstrap-avatar](https://github.com/getmindspun/bootstrap-avatar). Usage of the above CDN does NOT require either
 Bootstrap or jQuery.
 
 ### From source
@@ -119,14 +119,14 @@ works with any type of form you want to use.
         <textarea class="form-control" id="contact-message" name="message" rows="6"></textarea>
     </div>
     <input name="location" type="hidden" value="{{@site.url}}/#thank-you">
-    <input name="ghoststead_api_key" type="hidden" value="1234567890abcdefghijklmn">
+    <input name="api_key" type="hidden" value="1234567890abcdefghijklmn">
     <button class="btn btn-primary w-100" type="submit">Write to us</button>
 </div>
 ```
-This example is the contact from <https://www.ghoststead.com/contact/> and uses the
-GhostStead form handler, but any form service will do.  The important thing is to redirect
+This example is the contact from <https://www.mindspun.com/contact/> and uses the
+Mindspun form handler, but any form service will do.  The important thing is to redirect
 the user to the anchor #thank-you after form submission.
-In this example, the user would be redirected to <https://www.ghoststead.com/contact/#thank-you>.
+In this example, the user would be redirected to <https://www.mindspun.com/contact/#thank-you>.
 
 ### Add the HTML message
 
@@ -153,7 +153,7 @@ will send the user back `/`.
 
 ### Test
 You can test style of the 'thank-you' page by navigating to anchor directly.
-From the above example, click on <https://www.ghoststead.com/contact/#thank-you> and
+From the above example, click on <https://www.mindspun.com/contact/#thank-you> and
 you'll see the contact form 'thank you' messages without actually
 submitting the form.
 
@@ -165,5 +165,5 @@ npm run dev
 ```
 
 ---
-This repository is maintained by [Ghoststead](https://www.ghoststead.com).
+This repository is maintained by [Mindspun](https://www.mindspun.com).
 

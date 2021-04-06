@@ -62,7 +62,7 @@
 <div class="position-fixed top-0 p-4 w-100 text-center text-white bg-success subscribe-notification subscribe-success-message"
      data-autohide="false">
     <a class="btn-close btn-close-white float-end subscribe-close-button" href="javascript:"></a>
-    You've successfully subscribed to GhostStead!
+    You've successfully subscribed to Mindspun!
 </div>
 <div class="position-fixed top-0 p-4 w-100 text-center text-white bg-danger subscribe-notification subscribe-failure-message">
     <a class="btn-close btn-close-white float-end subscribe-close-button" href="javascript:"></a>
@@ -79,7 +79,7 @@
     </div>
     <div class="text-white text-center subscribe-overlay-content">
         <div class="subscribe-form">
-            <h1 class="subscribe-overlay-title">Subscribe to GhostStead</h1>
+            <h1 class="subscribe-overlay-title">Subscribe to Mindspun</h1>
             <p class="subscribe-overlay-description">
                 Enter an email address - any value containing a '@' will succeed.
             </p>
@@ -107,7 +107,7 @@
 <!-- ENG html included in your theme -->
 
 <div class="small position-fixed bottom-0 end-0 p-4">
-    Powered by <a class="text-decoration-none" href="https://www.ghoststead.com/">GhostStead</a>
+    Powered by <a class="text-decoration-none" href="https://www.mindspun.com/">Mindspun</a>
 </div>
 
 <script>
@@ -121,7 +121,7 @@
 
             setTimeout(function () {
                 form.className = '';
-                const email = document.querySelector('*[data-members-email]').value;
+                var email = document.querySelector('*[data-members-email]').value;
                 if (email && email.indexOf('@') !== -1) {
                     form.classList.add('success');
                 } else {
@@ -133,7 +133,7 @@
 
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous" async defer></script>
 
