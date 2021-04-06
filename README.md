@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-1.4.0-blue)
+![Version](https://img.shields.io/badge/version-1.5.0-blue)
 ![GitHub](https://img.shields.io/github/license/getmindspun/ghost-theme-utils?label=License)
 
 # ghost-theme-utils
