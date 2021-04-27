@@ -1,19 +1,19 @@
-gs.ready(function () {
-    var action = gs.getParameterByName('action');
-    var success = gs.getParameterByName('success');
+gtu.ready(function () {
+    var action = gtu.getParameterByName('action');
+    var success = gtu.getParameterByName('success');
 
     if (action === 'subscribe' && (success === null || success === 'true')) {
-        gs('body').addClass('subscribe-success');
+        gtu('body').addClass('subscribe-success');
     }
     if (action === 'subscribe' && success === 'false') {
-        gs('body').addClass('subscribe-failure');
+        gtu('body').addClass('subscribe-failure');
     }
-    gs('.subscribe-notification .subscribe-close-button').click(function () {
-        gs('.subscribe-notification').addClass('close');
+    gtu('.subscribe-notification .subscribe-close-button').click(function () {
+        gtu('.subscribe-notification').addClass('close');
     });
     // Reset form on opening subscription overlay
-    gs('.subscribe-button').click(function () {
-        gs('.subscribe-overlay form').removeClass();
-        gs('.subscribe-email').val('');
+    gtu('.subscribe-button').click(function () {
+        gtu('.subscribe-overlay form').removeClass();
+        gtu('.subscribe-email').val('');
     });
 });

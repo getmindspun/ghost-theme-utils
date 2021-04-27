@@ -42,7 +42,7 @@ function scss(done) {
 function js(done) {
     pump([
         gulp.src(
-            ['js/gs.js', 'js/subscribe.js'],
+            ['js/gtu.js', 'js/subscribe.js'],
             {sourcemaps: true}
         ),
         concat('ghost-theme-utils.js'),

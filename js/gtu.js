@@ -26,11 +26,6 @@
             }
         });
     }
-    Selection.prototype.click = function(fn) {
-        return this.each(function (element) {
-            element.addEventListener('click', fn);
-        });
-    }
 
     Selection.prototype.val = function(value) {
         return this.each(function (element) {
@@ -38,12 +33,22 @@
         });
     }
 
-    window.gs = function(selectors) {
+    Selection.prototype.on = function(type, listener, useCapture) {
+        return this.each(function (element) {
+            element.addEventListener(type, listener, useCapture);
+        });
+    }
+
+    Selection.prototype.click = function(listener, useCapture) {
+        return this.on('click', listener, useCapture);
+    }
+
+    window.gtu = function(selectors) {
         return new Selection(selectors);
     }
 
     // https://stackoverflow.com/a/9899701/6849315
-    gs.ready = function (fn) {
+    gtu.ready = function (fn) {
         // see if DOM is already available
         if (document.readyState === "complete" || document.readyState === "interactive") {
             // call on next available tick
@@ -53,7 +58,7 @@
         }
     }
 
-    gs.getParameterByName = function (name, url) {
+    gtu.getParameterByName = function (name, url) {
         if (!url) {
             url = window.location.href;
         }
@@ -69,11 +74,10 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    gs.addClass = function (selectors, classes) {
+    gtu.addClass = function (selectors, classes) {
         document.querySelectorAll(selectors).forEach(function (element) {
             element.classList.add(classes);
         });
     }
-
 
 })();

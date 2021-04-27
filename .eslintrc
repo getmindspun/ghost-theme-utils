@@ -3,7 +3,7 @@
         "browser": true
     },
     "globals": {
-        "gs": true
+        "gtu": true
     },
     "extends": "eslint:recommended",
     "plugins": ["html"]
