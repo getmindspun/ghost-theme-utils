@@ -1,18 +1,53 @@
 .kg-width-wide {
-    /*! keep */
+    grid-column: wide-start / wide-end;
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    &.kg-card-hascaption img {
+        grid-column: wide-start / wide-end;
+    }
 }
 
 .kg-width-full {
-    /*! keep */
+    grid-column: full-start / full-end;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    &.kg-card-hascaption {
+        display: grid;
+        grid-template-columns: inherit;
+
+        img {
+            grid-column: 1 / -1;
+        }
+
+        &, & figcaption {
+            grid-column: main-start / main-end;
+        }
+    }
 }
 
-.kg-bookmark-author {
-    /*! keep */
+.kg-bookmark-author,
+.kg-bookmark-publisher {
+    display: inline;
 }
 
 .kg-image {
     margin: 0 auto;
     max-width: 100%;
+}
+
+.kg-image-card {
+    img {
+        height: auto;
+        margin: auto;
+    }
 }
 
 .kg-gallery-container {
