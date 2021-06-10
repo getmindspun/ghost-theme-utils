@@ -1,9 +1,9 @@
 ![Version](https://img.shields.io/badge/version-1.6.0-blue)
 ![GitHub](https://img.shields.io/github/license/getmindspun/ghost-theme-utils?label=License)
 
-# ghost-theme-utils
-
-Easily add Ghost functionality to custom themes.
+<h1 align="center">ghost-theme-utils</h1>
+<h4 align="center">Easily add Ghost functionality to custom themes.</h4>
+<br>
 
 See the blog article
 [Everything you need to know about subscription forms in Ghost](https://www.mindspun.com/blog/ghost-subscription-forms/)
@@ -27,9 +27,9 @@ You can see this package in action in the following ways.
 
 This is the easiest way to explore the functionality provided by this package.
 
-### As part of the GhostStead default theme
+### As part of the Spin, the default Mindspun theme
 
-* https://demo.ghoststead.net/
+* https://demo.mindspin/
 
 ## Usage
 
